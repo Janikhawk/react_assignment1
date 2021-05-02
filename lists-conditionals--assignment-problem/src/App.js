@@ -44,16 +44,16 @@ class App extends Component {
         <p>{this.state.textLength}</p>
         
         <Validation
-          textLength = {this.state.textLength}
-        ></Validation>
+            textLength = {this.state.textLength}
+        />
 
         <div>
             {this.state.text.split('').map((letter, index) => 
                <Char
-                key={'char'+index}
+                key={'char' + index}
                 letter={letter}
                 charClick={() => this.charClick(index)}
-             ></Char>
+                />
             )}
         </div>
 
